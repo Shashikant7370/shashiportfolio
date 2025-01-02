@@ -7,7 +7,7 @@ function Navbar({ show, setShow }) {
   return (
     <nav className="h-24 bg-[rgb(11,26,51)] text-white sticky z-50 shadow-md shadow-slate-400 top-0 left-0 flex w-full justify-between px-8 lg:px-44 items-center">
       <a href="#hero">
-        <h1 className="text-4xl text-orange-300 tracking-[1.7px] font-bahiana font-semibold ">
+        <h1 className="text-3xl lg:text-4xl text-orange-300 tracking-[1.7px] font-bahiana font-semibold ">
           SHASHIKANT
         </h1>
       </a>
