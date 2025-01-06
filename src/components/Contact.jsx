@@ -14,25 +14,20 @@ function Contact() {
   const form = useRef();
   const handleEmail = (e) => {
     e.preventDefault();
-    let tempParams = {
-      name: name,
-      email: email,
-      subject: subject,
-      message: message,
-    };
-    console.log(tempParams);
     emailjs
       .sendForm("service_c0q5ccf", "template_akq6lwj", form.current, {
         publicKey: "yVWClLE4F1F-rvBZA",
       })
       .then(
         () => {
-          alert("Thank you for contacting me, I will get back to you soon.");
+          alert("Thank you for contacting me\n, I will get back to you soon.");
         },
         (error) => {
           alert("FAILED...", error.text);
-        }
+        },
+        setName(""), setEmail(""),setMessage(""),setSubject("")
       );
+      
   };
 
   return (
