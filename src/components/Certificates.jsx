@@ -33,6 +33,10 @@ const certificates = [
     src: "/certificates/mcse.pdf",
     img: "/certificates/images/8.png",
   },
+  {
+    src: "/certificates/tcs_nqt.pdf",
+    img: "/certificates/images/9.png",
+  },
 ];
 function Certificates() {
   return (
