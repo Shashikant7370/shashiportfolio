@@ -41,6 +41,7 @@ function Contact() {
         ref={form}
         onSubmit={handleEmail}
         className="flex flex-col w-full sm:w-[400px] bg-slate-600 p-2 rounded-sm "
+        data-aos="fade-down"
       >
         <input
           type="text"

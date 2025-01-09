@@ -49,7 +49,7 @@ function Certificates() {
         {certificates.map(
           (certificate, index) => (
             (
-              <div className="m-4 shadow-md rounded-lg p-2 flex shadow-slate-500" key={index}>
+              <div data-aos="flip-up" className="m-4 shadow-md rounded-lg p-2 flex shadow-slate-500" key={index}>
                 <div className="hover:scale-105 transition-all duration-700 ">
                   <a href={certificate.src} target="_blank">
                     <img

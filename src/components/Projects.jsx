@@ -10,7 +10,7 @@ function Projects() {
 
       {/* Meme Generator */}
       <div className="mt-3 shadow-md rounded-lg py-10 flex flex-col-reverse sm:flex-row justify-evenly items-center">
-        <div className="sm:w-[400px]">
+        <div data-aos="flip-down" className="sm:w-[400px]">
           <h3 className="text-xl py-1 text-sky-600 font-semibold underline">
             Meme Generator App
           </h3>
@@ -21,7 +21,10 @@ function Projects() {
             social media.
           </p>
         </div>
-        <div className="hover:scale-105 transition-all duration-700">
+        <div
+          data-aos="zoom-in-left"
+          className="hover:scale-105 transition-all duration-700"
+        >
           <img
             src="/projects/meme_generator.png"
             height={300}
@@ -34,7 +37,10 @@ function Projects() {
       {/*BMI Calculator*/}
 
       <div className="mt-8 shadow-md rounded-lg py-10 flex flex-col sm:flex-row justify-evenly items-center">
-        <div className="hover:scale-105 transition-all duration-700">
+        <div
+          data-aos="zoom-out-right"
+          className="hover:scale-105 transition-all duration-700"
+        >
           <img
             src="/projects/bmi_calculator.png"
             height={300}
@@ -42,7 +48,10 @@ function Projects() {
             className="shadow-inner shadow-slate-700 p-1 rounded-md"
           />
         </div>
-        <div className="sm:w-[400px]">
+        <div
+          data-aos="fade-up"
+          className="sm:w-[400px]"
+        >
           <h3 className="text-xl py-1 text-sky-600 font-semibold underline">
             BMI Calculator App
           </h3>
@@ -55,7 +64,7 @@ function Projects() {
 
       {/* Weather App */}
       <div className="mt-8 shadow-md rounded-lg py-10 flex flex-col-reverse sm:flex-row justify-evenly items-center">
-        <div className="sm:w-[400px]">
+        <div data-aos="flip-down" className="sm:w-[400px]">
           <h3 className="text-xl py-1 text-sky-600 font-semibold underline">
             Weather App
           </h3>
@@ -67,7 +76,7 @@ function Projects() {
           </p>
         </div>
 
-        <div className="hover:scale-105 transition-all duration-500">
+        <div data-aos="flip-left" className="hover:scale-105 transition-all duration-500">
           <img
             src="/projects/weather_app.png"
             height={200}

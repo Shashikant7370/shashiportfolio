@@ -107,6 +107,7 @@ function Skills() {
       <div className="flex gap-2 md:gap-6 lg:gap-8 flex-wrap w-full lg:w-[900px] m-auto justify-center ">
         {skills.map((skill, index) => (
           <div
+            data-aos="flip-right"
             key={index}
             className="flex flex-col w-36 sm:w-52 lg:w-60 p-2 sm:p-4 justify-center rounded-md  z-20 text-orange-400 items-center bg-gradient-to-tr from-sky-500 to-gray-700-400 relative overflow-hidden"
           >
@@ -117,9 +118,14 @@ function Skills() {
             />
             <h2 className="text-xs sm:text-xl uppercase">{skill.skill}</h2>
             <div className="absolute bottom-0 left-0 w-full bg-slate-600">
-              <div style={{width:`${skill.per}%`}} className={`h-2 bg-orange-400 rounded-full`}></div>
+              <div
+                style={{ width: `${skill.per}%` }}
+                className={`h-2 bg-orange-400 rounded-full`}
+              ></div>
             </div>
-            <h1 className="absolute right-1 bottom-2 sm:right-4 sm:bottom-4 text-xs text-white ">{skill.per}%</h1>
+            <h1 className="absolute right-1 bottom-2 sm:right-4 sm:bottom-4 text-xs text-white ">
+              {skill.per}%
+            </h1>
           </div>
         ))}
       </div>
